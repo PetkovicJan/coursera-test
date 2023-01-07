@@ -1,0 +1,81 @@
+/* Common style */
+
+* {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 175%;
+	text-align: center;
+}
+
+h2 {
+	margin: 0;
+	padding: 5px 20px 5px 20px;
+	font-size: 125%;
+	border: 1px solid black;
+	text-align: center;
+	width: 150px;
+
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}
+
+.content-box {
+	margin: 10px;
+	border: 1px solid black;
+	background-color: #8c8c8c;
+	position: relative;
+}
+
+.text-box {
+	margin: 0;
+	padding: 45px 15px 15px 15px;
+}
+
+.bg-yellow {
+	background-color: #ffff99;
+}
+
+.bg-green {
+	background-color: #669900;
+}
+
+.bg-blue {
+	background-color: #0099cc;
+}
+
+/* Media dependent styles*/
+
+/* For consistency we use 12 column grid layout notation but only define the relevant sizes */
+
+/* Desktop devices */
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/* Tablet devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-6 {
+		float: left;
+		width: 50%;
+	}
+
+	.col-md-12 {
+		float: left;
+		width: 100%;
+	}
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
+}
